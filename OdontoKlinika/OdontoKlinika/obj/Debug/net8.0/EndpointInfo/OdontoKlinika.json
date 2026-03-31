@@ -1,0 +1,2060 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OdontoKlinika API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Auth/registracija": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistracijaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistracijaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistracijaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login-2fa": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginTwoFactorDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginTwoFactorDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginTwoFactorDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/setup-2fa": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/verify-2fa": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/disable-self-2fa": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/google-login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleLoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleLoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleLoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Grafikas/mano": {
+      "get": {
+        "tags": [
+          "Grafikas"
+        ],
+        "parameters": [
+          {
+            "name": "gydytojoId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Grafikas/atnaujinti": {
+      "post": {
+        "tags": [
+          "Grafikas"
+        ],
+        "parameters": [
+          {
+            "name": "gydytojoId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DarboGrafikas"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DarboGrafikas"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DarboGrafikas"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Grafikas/isimtis": {
+      "post": {
+        "tags": [
+          "Grafikas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DarboIsimtis"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DarboIsimtis"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DarboIsimtis"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Grafikas/isimtys": {
+      "get": {
+        "tags": [
+          "Grafikas"
+        ],
+        "parameters": [
+          {
+            "name": "gydytojoId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Grafikas/isimtis/{id}": {
+      "delete": {
+        "tags": [
+          "Grafikas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Gydytojai": {
+      "get": {
+        "tags": [
+          "Gydytojai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Gydytojai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GydytojasDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GydytojasDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GydytojasDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gydytojas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gydytojas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gydytojas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Gydytojai/{id}": {
+      "delete": {
+        "tags": [
+          "Gydytojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pacientai": {
+      "get": {
+        "tags": [
+          "Pacientai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pacientas"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pacientas"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pacientas"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Pacientai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pacientas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pacientas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pacientas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pacientas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pacientas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pacientas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Pacientai/profilis": {
+      "get": {
+        "tags": [
+          "Pacientai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proceduros": {
+      "post": {
+        "tags": [
+          "Proceduros"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Proceduros/{id}": {
+      "put": {
+        "tags": [
+          "Proceduros"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProceduraDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Proceduros"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistika/statistika": {
+      "get": {
+        "tags": [
+          "Statistika"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistika/analize": {
+      "get": {
+        "tags": [
+          "Statistika"
+        ],
+        "parameters": [
+          {
+            "name": "metai",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "menesis",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/profilis": {
+      "get": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/atnaujinti": {
+      "put": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/keisti-slaptazodi": {
+      "post": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlaptazodžioKeitimoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlaptazodžioKeitimoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlaptazodžioKeitimoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/keisti-el-pasta": {
+      "post": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ElPastoKeitimoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ElPastoKeitimoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ElPastoKeitimoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/{id}": {
+      "delete": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vartotojas"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/admin-atnaujinti/{id}": {
+      "put": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilioAtnaujinimoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai": {
+      "get": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/admin-atnaujinti-prieiga/{id}": {
+      "put": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminAccessUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminAccessUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminAccessUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vartotojai/admin-reset-2fa/{id}": {
+      "put": {
+        "tags": [
+          "Vartotojai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vizitai/registruotis": {
+      "post": {
+        "tags": [
+          "Vizitai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/issamus-sarasas": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vizitai/mano-vizitai": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/uzbaigti": {
+      "patch": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/atshaukti": {
+      "put": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/sukurti-apmokejima": {
+      "post": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/patvirtinti-apmokejima/{id}": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/atsaukti-gydytojas": {
+      "patch": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/generuoti-pdf": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/apmoketi": {
+      "patch": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/{id}/redaguoti": {
+      "put": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VizitasUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vizitai/uzimti-laikai": {
+      "get": {
+        "tags": [
+          "Vizitai"
+        ],
+        "parameters": [
+          {
+            "name": "gydytojasId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "data",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdminAccessUpdateDto": {
+        "type": "object",
+        "properties": {
+          "naujasEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "naujasSlaptazodis": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DarboGrafikas": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gydytojoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "savaitesDiena": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "dirba": {
+            "type": "boolean"
+          },
+          "pradzia": {
+            "type": "string",
+            "nullable": true
+          },
+          "pabaiga": {
+            "type": "string",
+            "nullable": true
+          },
+          "pertraukaNuo": {
+            "type": "string",
+            "nullable": true
+          },
+          "pertraukaIki": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DarboIsimtis": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gydytojoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "arDirba": {
+            "type": "boolean"
+          },
+          "pradzia": {
+            "type": "string",
+            "nullable": true
+          },
+          "pabaiga": {
+            "type": "string",
+            "nullable": true
+          },
+          "priezastis": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DayOfWeek": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "ElPastoKeitimoDto": {
+        "type": "object",
+        "properties": {
+          "naujasEmail": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GoogleLoginDto": {
+        "type": "object",
+        "properties": {
+          "idToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Gydytojas": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodisHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "asmensKodas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "twoFactorSecret": {
+            "type": "string",
+            "nullable": true
+          },
+          "isTwoFactorEnabled": {
+            "type": "boolean"
+          },
+          "googleId": {
+            "type": "string",
+            "nullable": true
+          },
+          "specializacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "darboPatirtisMetais": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vizitai": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Vizitas"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GydytojasDto": {
+        "type": "object",
+        "properties": {
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "asmensKodas": {
+            "type": "string",
+            "nullable": true
+          },
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodis": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "specializacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "darboPatirtisMetais": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodis": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginTwoFactorDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pacientas": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodisHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "asmensKodas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "twoFactorSecret": {
+            "type": "string",
+            "nullable": true
+          },
+          "isTwoFactorEnabled": {
+            "type": "boolean"
+          },
+          "googleId": {
+            "type": "string",
+            "nullable": true
+          },
+          "vizitai": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Vizitas"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Procedura": {
+        "required": [
+          "kaina",
+          "pavadinimas",
+          "vizitasId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pavadinimas": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "aprasymas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kaina": {
+            "type": "number",
+            "format": "double"
+          },
+          "vizitasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vizitas": {
+            "$ref": "#/components/schemas/Vizitas"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProceduraDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "vizitasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pavadinimas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kaina": {
+            "type": "number",
+            "format": "double"
+          },
+          "aprasymas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfilioAtnaujinimoDto": {
+        "type": "object",
+        "properties": {
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "specializacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "darboPatirtisMetais": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistracijaDto": {
+        "type": "object",
+        "properties": {
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "asmensKodas": {
+            "type": "string",
+            "nullable": true
+          },
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodis": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SlaptazodžioKeitimoDto": {
+        "type": "object",
+        "properties": {
+          "senasSlaptazodis": {
+            "type": "string",
+            "nullable": true
+          },
+          "naujasSlaptazodis": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Vartotojas": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vardas": {
+            "type": "string",
+            "nullable": true
+          },
+          "pavarde": {
+            "type": "string",
+            "nullable": true
+          },
+          "elPastas": {
+            "type": "string",
+            "nullable": true
+          },
+          "slaptazodisHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonas": {
+            "type": "string",
+            "nullable": true
+          },
+          "amzius": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "asmensKodas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kraujoGrupe": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "twoFactorSecret": {
+            "type": "string",
+            "nullable": true
+          },
+          "isTwoFactorEnabled": {
+            "type": "boolean"
+          },
+          "googleId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Vizitas": {
+        "required": [
+          "gydytojasId",
+          "pabaigosLaikas",
+          "pacientasId",
+          "pradziosLaikas"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pacientasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pacientas": {
+            "$ref": "#/components/schemas/Pacientas"
+          },
+          "gydytojasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gydytojas": {
+            "$ref": "#/components/schemas/Gydytojas"
+          },
+          "pradziosLaikas": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pabaigosLaikas": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "busena": {
+            "type": "string",
+            "nullable": true
+          },
+          "pastabos": {
+            "type": "string",
+            "nullable": true
+          },
+          "sukurimoData": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "proceduros": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Procedura"
+            },
+            "nullable": true
+          },
+          "apmoketa": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VizitasDto": {
+        "type": "object",
+        "properties": {
+          "pacientasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gydytojasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pradziosLaikas": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pastabos": {
+            "type": "string",
+            "nullable": true
+          },
+          "procedurosPavadinimas": {
+            "type": "string",
+            "nullable": true
+          },
+          "procedurosKaina": {
+            "type": "number",
+            "format": "double"
+          },
+          "trukmeMin": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VizitasUpdateDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pradziosLaikas": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "gydytojasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trukmeMin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "procedurosPavadinimas": {
+            "type": "string",
+            "nullable": true
+          },
+          "procedurosKaina": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Įveskite savo JWT žetoną šiuo formatu: Bearer {tokenas}",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

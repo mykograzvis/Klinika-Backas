@@ -1,0 +1,828 @@
+[
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "DisableSelf2FA",
+    "RelativePath": "api/Auth/disable-self-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "GoogleLogin",
+    "RelativePath": "api/Auth/google-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OdontoKlinika.API.DTOs.GoogleLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OdontoKlinika.API.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "Login2FA",
+    "RelativePath": "api/Auth/login-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OdontoKlinika.API.DTOs.LoginTwoFactorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "Registruotis",
+    "RelativePath": "api/Auth/registracija",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OdontoKlinika.API.DTOs.RegistracijaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoKlinika.API.Models.Vartotojas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "Setup2FA",
+    "RelativePath": "api/Auth/setup-2fa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.AuthController",
+    "Method": "Verify2FA",
+    "RelativePath": "api/Auth/verify-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrafikasController",
+    "Method": "AtnaujintiGrafika",
+    "RelativePath": "api/Grafikas/atnaujinti",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "naujasGrafikas",
+        "Type": "System.Collections.Generic.List\u00601[[OdontoKlinika.API.Models.DarboGrafikas, OdontoKlinika, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "gydytojoId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrafikasController",
+    "Method": "PridetiIsimti",
+    "RelativePath": "api/Grafikas/isimtis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isimtis",
+        "Type": "OdontoKlinika.API.Models.DarboIsimtis",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrafikasController",
+    "Method": "TrintiIsimti",
+    "RelativePath": "api/Grafikas/isimtis/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrafikasController",
+    "Method": "GetIsimtys",
+    "RelativePath": "api/Grafikas/isimtys",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gydytojoId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrafikasController",
+    "Method": "GetGrafikas",
+    "RelativePath": "api/Grafikas/mano",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gydytojoId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.GydytojaiController",
+    "Method": "GetGydytojai",
+    "RelativePath": "api/Gydytojai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.GydytojaiController",
+    "Method": "PostGydytojas",
+    "RelativePath": "api/Gydytojai",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.GydytojasDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoKlinika.API.Models.Gydytojas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.GydytojaiController",
+    "Method": "DeleteGydytojas",
+    "RelativePath": "api/Gydytojai/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.PacientaiController",
+    "Method": "GetPacientai",
+    "RelativePath": "api/Pacientai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[OdontoKlinika.API.Models.Pacientas, OdontoKlinika, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.PacientaiController",
+    "Method": "PostPacientas",
+    "RelativePath": "api/Pacientai",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pacientas",
+        "Type": "OdontoKlinika.API.Models.Pacientas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoKlinika.API.Models.Pacientas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.PacientaiController",
+    "Method": "GetProfilis",
+    "RelativePath": "api/Pacientai/profilis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.ProcedurosController",
+    "Method": "Create",
+    "RelativePath": "api/Proceduros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.ProceduraDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.ProcedurosController",
+    "Method": "Update",
+    "RelativePath": "api/Proceduros/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.ProceduraDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.ProcedurosController",
+    "Method": "Delete",
+    "RelativePath": "api/Proceduros/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.StatistikaController",
+    "Method": "GetAnalize",
+    "RelativePath": "api/Statistika/analize",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "metai",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "menesis",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.StatistikaController",
+    "Method": "GetStatistika",
+    "RelativePath": "api/Statistika/statistika",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "GetVartotojai",
+    "RelativePath": "api/Vartotojai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "DeleteVartotojas",
+    "RelativePath": "api/Vartotojai/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "GetVartotojas",
+    "RelativePath": "api/Vartotojai/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoKlinika.API.Models.Vartotojas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "AdminUpdateAccess",
+    "RelativePath": "api/Vartotojai/admin-atnaujinti-prieiga/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.AdminAccessUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "AdminUpdateVartotojas",
+    "RelativePath": "api/Vartotojai/admin-atnaujinti/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.ProfilioAtnaujinimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "Reset2FA",
+    "RelativePath": "api/Vartotojai/admin-reset-2fa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "UpdateProfilis",
+    "RelativePath": "api/Vartotojai/atnaujinti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.ProfilioAtnaujinimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "KeistiElPasta",
+    "RelativePath": "api/Vartotojai/keisti-el-pasta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.ElPastoKeitimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "KeistiSlaptazodi",
+    "RelativePath": "api/Vartotojai/keisti-slaptazodi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.Slaptazod\u017EioKeitimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VartotojaiController",
+    "Method": "GetManoProfilis",
+    "RelativePath": "api/Vartotojai/profilis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoKlinika.API.Models.Vartotojas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "GetVisiVizitai",
+    "RelativePath": "api/Vizitai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "Apmoketi",
+    "RelativePath": "api/Vizitai/{id}/apmoketi",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "AtsauktiVizitaGydytojas",
+    "RelativePath": "api/Vizitai/{id}/atsaukti-gydytojas",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "AtshauktiVizita",
+    "RelativePath": "api/Vizitai/{id}/atshaukti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "DownloadPdf",
+    "RelativePath": "api/Vizitai/{id}/generuoti-pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "RedaguotiVizita",
+    "RelativePath": "api/Vizitai/{id}/redaguoti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.VizitasUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "SukurtiApmokejima",
+    "RelativePath": "api/Vizitai/{id}/sukurti-apmokejima",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "Uzbaigti",
+    "RelativePath": "api/Vizitai/{id}/uzbaigti",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "GetIssamusVizitai",
+    "RelativePath": "api/Vizitai/issamus-sarasas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "GetManoVizitai",
+    "RelativePath": "api/Vizitai/mano-vizitai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "PatvirtintiApmokejima",
+    "RelativePath": "api/Vizitai/patvirtinti-apmokejima/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "Registruotis",
+    "RelativePath": "api/Vizitai/registruotis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OdontoKlinika.API.DTOs.VizitasDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OdontoKlinika.API.Controllers.VizitaiController",
+    "Method": "GetUzimtiLaikai",
+    "RelativePath": "api/Vizitai/uzimti-laikai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gydytojasId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
