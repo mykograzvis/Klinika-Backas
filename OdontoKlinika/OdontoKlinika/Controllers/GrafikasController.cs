@@ -122,7 +122,7 @@ public class GrafikasController : ControllerBase
                     await _emailService.SiustiPranesima(
                         vizitas.Pacientas.ElPastas,
                         "Atšauktas vizitas dėl klinikos darbo grafiko pokyčių",
-                        $@"<h3>Gerb. {vizitas.Pacientas.Vardas},</h3>
+                        $@"<h3>Gerb. {vizitas.Pacientas.Vardas} {vizitas.Pacientas.Pavarde},</h3>
                        <p>Informuojame, kad dėl gydytojo darbo grafiko pasikeitimų jūsų vizitas, 
                        suplanuotas <strong>{laikas}</strong> pas gydytoją <strong>{gydytojas}</strong>, buvo atšauktas.</p>
                        <p>Prašome užsiregistruoti kitam laikui. Atsiprašome už nepatogumus.</p>"

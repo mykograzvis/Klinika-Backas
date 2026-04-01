@@ -54,46 +54,43 @@ namespace OdontoKlinika.API.Controllers
         }
 
        [HttpPost("registruotis")]
-public async Task<IActionResult> Registruotis(VizitasDto dto)
-{
-            DateTime pabaiga = dto.PradziosLaikas.AddMinutes(dto.TrukmeMin);
+        public async Task<IActionResult> Registruotis(VizitasDto dto)
+        {
+                    DateTime pabaiga = dto.PradziosLaikas.AddMinutes(dto.TrukmeMin);
 
-        var uzimta = await _context.Vizitai.AnyAsync(v =>
-        v.GydytojasId == dto.GydytojasId &&
-        v.Busena != "Atšauktas" &&
-        ((dto.PradziosLaikas < v.PabaigosLaikas) && (pabaiga > v.PradziosLaikas)));
+                var uzimta = await _context.Vizitai.AnyAsync(v =>
+                v.GydytojasId == dto.GydytojasId &&
+                v.Busena != "Atšauktas" &&
+                ((dto.PradziosLaikas < v.PabaigosLaikas) && (pabaiga > v.PradziosLaikas)));
 
-    if (uzimta) return BadRequest("Šis laikas arba dalis jo jau užimta.");
-    // 2. Sukuriame vizitą
-    var vizitas = new Vizitas
-    {
-        PacientasId = dto.PacientasId,
-        GydytojasId = dto.GydytojasId,
-        PradziosLaikas = dto.PradziosLaikas,
-        PabaigosLaikas = pabaiga,
-        Pastabos = dto.Pastabos,
-        Busena = "Suplanuotas"
-    };
+            if (uzimta) return BadRequest("Šis laikas arba dalis jo jau užimta.");
 
-    _context.Vizitai.Add(vizitas);
-    
-    // SVARBU: Išsaugome, kad gautume vizito ID procedūrai
-    await _context.SaveChangesAsync();
+            var vizitas = new Vizitas
+            {
+                PacientasId = dto.PacientasId,
+                GydytojasId = dto.GydytojasId,
+                PradziosLaikas = dto.PradziosLaikas,
+                PabaigosLaikas = pabaiga,
+                Pastabos = dto.Pastabos,
+                Busena = "Suplanuotas"
+            };
 
-    // 3. Iškart sukuriame pirminę procedūrą
-    var pirmineProcedura = new Procedura
-    {
-        VizitasId = vizitas.Id,
-        Pavadinimas = dto.ProcedurosPavadinimas,
-        Kaina = dto.ProcedurosKaina,
-        Aprasymas = "Pirminė registracijos paslauga"
-    };
+            _context.Vizitai.Add(vizitas);
+            await _context.SaveChangesAsync();
 
-    _context.Proceduros.Add(pirmineProcedura);
-    await _context.SaveChangesAsync();
+            var pirmineProcedura = new Procedura
+            {
+                VizitasId = vizitas.Id,
+                Pavadinimas = dto.ProcedurosPavadinimas,
+                Kaina = dto.ProcedurosKaina,
+                Aprasymas = "Pirminė registracijos paslauga"
+            };
 
-    return Ok(new { message = "Registracija ir paslauga sėkmingai sukurta!" });
-}
+            _context.Proceduros.Add(pirmineProcedura);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Registracija ir paslauga sėkmingai sukurta!" });
+        }
 
         // 3. Išsamus sąrašas su procedūromis (3 lygių gylis bakalaurui)
         [HttpGet("issamus-sarasas")]
@@ -198,6 +195,7 @@ public async Task<IActionResult> Registruotis(VizitasDto dto)
                 await _emailService.SiustiSaskaitaSuPriedu(
                     vizitas.Pacientas.ElPastas,
                     vizitas.Pacientas.Vardas,
+                    vizitas.Pacientas.Pavarde,
                     pdfFailas,
                     vizitas.Id.ToString()
                 );
@@ -393,7 +391,7 @@ public async Task<IActionResult> Registruotis(VizitasDto dto)
                     await _emailService.SiustiPranesima(
                         vizitas.Pacientas.ElPastas,
                         "Atšauktas vizitas - OdontoKlinika",
-                        $@"<h3>Gerb. {vizitas.Pacientas.Vardas},</h3>
+                        $@"<h3>Gerb. {vizitas.Pacientas.Vardas} {vizitas.Pacientas.Pavarde},</h3>
                    <p>Informuojame, kad jūsų vizitas, suplanuotas <strong>{laikas}</strong> pas gydytoją <strong>{gydytojas}</strong>, buvo atšauktas.</p>
                    <p>Jei turite klausimų, susisiekite su klinikos administracija.</p>"
                     );

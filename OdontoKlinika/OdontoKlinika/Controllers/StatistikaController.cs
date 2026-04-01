@@ -57,27 +57,37 @@ namespace OdontoKlinika.API.Controllers
             int pasirinktiMetai = metai ?? dabar.Year;
             int pasirinktasMenesis = menesis ?? dabar.Month;
 
-            // Į analizę traukiame visus vizitus, kurie nėra atšaukti,
-            // pasirinktų metų ir mėnesio ribose
+            // Visi ne-atšaukti vizitai pasirinktam mėnesiui
             var menesioVizitai = await _context.Vizitai
                 .Include(v => v.Gydytojas)
                 .Include(v => v.Proceduros)
                 .Where(v =>
-                    v.Busena != "Atšauktas" &&            // pritaikyk tikslų tekstą
+                    v.Busena != "Atšauktas" &&
                     v.PradziosLaikas.Year == pasirinktiMetai &&
                     v.PradziosLaikas.Month == pasirinktasMenesis)
                 .ToListAsync();
 
-            // Debug: jeigu nori, kurį laiką palik šitą eilutę
             Console.WriteLine($"Analize: rasta vizitų = {menesioVizitai.Count}");
 
-            var bendraSuma = menesioVizitai.Sum(v => v.Proceduros.Sum(p => p.Kaina));
+            // Neapmokėti — tik "Atliktas" būsenos vizitai
+            var neapmoketi = menesioVizitai.Where(v => v.Busena == "Atliktas").ToList();
+
+            // BendraSuma ir gydytojų skaičiavimui — "Apmokėta" + "Atliktas"
+            var apmoketi = menesioVizitai
+                .Where(v => v.Busena == "Apmokėta" || v.Busena == "Atliktas")
+                .ToList();
+            var bendraSuma = apmoketi.Sum(v => v.Proceduros.Sum(p => p.Kaina));
+            var neapmokSkaicius = neapmoketi.Count;
+            var neapmokSuma = neapmoketi.Sum(v => v.Proceduros.Sum(p => p.Kaina));
+
+            // Unikalūs pacientai iš visų ne-atšauktų vizitų
             var pacientuSkaicius = menesioVizitai
                 .Select(v => v.PacientasId)
                 .Distinct()
                 .Count();
 
-            var gydytojuEfektyvumas = menesioVizitai
+            // Gydytojų efektyvumas — tik apmokėti vizitai
+            var gydytojuEfektyvumas = apmoketi
                 .Where(v => v.Gydytojas != null)
                 .GroupBy(v => v.Gydytojas.Vardas + " " + v.Gydytojas.Pavarde)
                 .Select(g => new
@@ -89,7 +99,8 @@ namespace OdontoKlinika.API.Controllers
                 .OrderByDescending(x => x.Pajamos)
                 .ToList();
 
-            var topProceduros = menesioVizitai
+            // Top procedūros — iš apmokėtų vizitų
+            var topProceduros = apmoketi
                 .SelectMany(v => v.Proceduros)
                 .GroupBy(p => p.Pavadinimas)
                 .Select(g => new
@@ -109,7 +120,12 @@ namespace OdontoKlinika.API.Controllers
                 BendraSuma = bendraSuma,
                 PacientuSkaicius = pacientuSkaicius,
                 GydytojuEfektyvumas = gydytojuEfektyvumas,
-                TopProceduros = topProceduros
+                TopProceduros = topProceduros,
+                Neapmoketi = new
+                {
+                    Skaicius = neapmokSkaicius,
+                    Suma = neapmokSuma
+                }
             };
 
             return Ok(statistika);

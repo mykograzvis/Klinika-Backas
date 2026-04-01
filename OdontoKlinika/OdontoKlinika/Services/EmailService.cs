@@ -2,7 +2,7 @@ using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
 using MimeKit.Text;
-using Microsoft.Extensions.Configuration; // Būtina pridėti šį namespace
+using Microsoft.Extensions.Configuration;
 
 namespace OdontoKlinika.API.Services
 {
@@ -10,22 +10,37 @@ namespace OdontoKlinika.API.Services
     {
         private readonly IConfiguration _configuration;
 
-        // Konstruktorius, kuris paima konfigūraciją iš programos
         public EmailService(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
+        // Pagalbinis metodas – jungiamasi vieną kartą, naudojamas visuose 3 metoduose
+        private async Task<SmtpClient> PrisijungtiPrieSMTP()
+        {
+            var smtp = new SmtpClient();
+            await smtp.ConnectAsync(
+                "smtp.gmail.com",
+                587,
+                SecureSocketOptions.StartTls
+            );
+            await smtp.AuthenticateAsync(
+                _configuration["EmailSettings:User"],
+                _configuration["EmailSettings:Password"]
+            );
+            return smtp;
+        }
+
         public async Task SiustiSaskaita(string klientoPastas, string klientoVardas, decimal suma, string procedurosHtml)
         {
             var email = new MimeMessage();
-            // Galite paimti siuntėją iš konfigūracijos arba palikti fiksuotą
-            email.From.Add(new MailboxAddress("Odonto Klinika", _configuration["EmailSettings:User"] ?? "tavo-klinika@gmail.com"));
+            email.From.Add(new MailboxAddress("Gelmidenta", _configuration["EmailSettings:User"]));
             email.To.Add(new MailboxAddress(klientoVardas, klientoPastas));
             email.Subject = "Jūsų vizito sąskaita faktūra";
 
-            var bodyBuilder = new BodyBuilder();
-            bodyBuilder.HtmlBody = $@"
+            var bodyBuilder = new BodyBuilder
+            {
+                HtmlBody = $@"
                 <div style='font-family: Arial, sans-serif; padding: 20px;'>
                     <h1 style='color: #007bff;'>Sveiki, {klientoVardas}</h1>
                     <p>Dėkojame, kad lankėtės mūsų klinikoje. Štai jūsų vizito išrašas:</p>
@@ -34,24 +49,11 @@ namespace OdontoKlinika.API.Services
                     </div>
                     <h2 style='text-align: right;'>Iš viso sumokėta: {suma} €</h2>
                     <p style='font-size: 12px; color: #666;'>Šis laiškas sugeneruotas automatiškai.</p>
-                </div>";
-
+                </div>"
+            };
             email.Body = bodyBuilder.ToMessageBody();
 
-            using var smtp = new SmtpClient();
-
-            // Naudojame konfigūraciją iš appsettings.json
-            await smtp.ConnectAsync(
-                _configuration["EmailSettings:Host"],
-                int.Parse(_configuration["EmailSettings:Port"]),
-                SecureSocketOptions.StartTls
-            );
-
-            await smtp.AuthenticateAsync(
-                _configuration["EmailSettings:User"],
-                _configuration["EmailSettings:Password"]
-            );
-
+            using var smtp = await PrisijungtiPrieSMTP();
             await smtp.SendAsync(email);
             await smtp.DisconnectAsync(true);
         }
@@ -59,48 +61,35 @@ namespace OdontoKlinika.API.Services
         public async Task SiustiPranesima(string pirkejoEmail, string tema, string htmlTurinys)
         {
             var email = new MimeMessage();
-            email.From.Add(new MailboxAddress("Odonto Klinika", _configuration["EmailSettings:User"]));
+            email.From.Add(new MailboxAddress("Gelmidenta", _configuration["EmailSettings:User"]));
             email.To.Add(MailboxAddress.Parse(pirkejoEmail));
             email.Subject = tema;
             email.Body = new TextPart(TextFormat.Html) { Text = htmlTurinys };
 
-            using var smtp = new SmtpClient();
-            await smtp.ConnectAsync(
-                _configuration["EmailSettings:Host"],
-                int.Parse(_configuration["EmailSettings:Port"]),
-                SecureSocketOptions.StartTls
-            );
-
-            await smtp.AuthenticateAsync(
-                _configuration["EmailSettings:User"],
-                _configuration["EmailSettings:Password"]
-            );
-
+            using var smtp = await PrisijungtiPrieSMTP();
             await smtp.SendAsync(email);
             await smtp.DisconnectAsync(true);
         }
 
-        public async Task SiustiSaskaitaSuPriedu(string klientoPastas, string klientoVardas, byte[] pdfContent, string saskaitosNr)
+        public async Task SiustiSaskaitaSuPriedu(string klientoPastas, string klientoVardas, string kleintoPavarde, byte[] pdfContent, string saskaitosNr)
         {
             var email = new MimeMessage();
-            email.From.Add(new MailboxAddress("Odonto Klinika", _configuration["EmailSettings:User"]));
+            email.From.Add(new MailboxAddress("Gelmidenta", _configuration["EmailSettings:User"]));
             email.To.Add(new MailboxAddress(klientoVardas, klientoPastas));
             email.Subject = $"Sąskaita faktūra Nr. {saskaitosNr}";
 
-            // 1. Sukuriame laiško tekstinę dalį
             var body = new TextPart("html")
             {
                 Text = $@"
-            <div style='font-family: sans-serif;'>
-                <h2>Sveiki, {klientoVardas},</h2>
-                <p>Dėkojame, kad lankėtės mūsų klinikoje.</p>
-                <p>Pridedame jūsų vizito sąskaitą faktūrą PDF formatu.</p>
-                <br>
-                <p>Pagarbiai,<br>Odonto Klinika</p>
-            </div>"
+                <div style='font-family: sans-serif;'>
+                    <h2>Sveiki, {klientoVardas} {kleintoPavarde},</h2>
+                    <p>Dėkojame, kad lankėtės mūsų klinikoje.</p>
+                    <p>Pridedame jūsų vizito sąskaitą faktūrą PDF formatu.</p>
+                    <br>
+                    <p>Pagarbiai,<br>Odonto Klinika</p>
+                </div>"
             };
 
-            // 2. Sukuriame priedą
             var attachment = new MimePart("application", "pdf")
             {
                 Content = new MimeContent(new MemoryStream(pdfContent)),
@@ -109,25 +98,14 @@ namespace OdontoKlinika.API.Services
                 FileName = $"Saskaita_{saskaitosNr}.pdf"
             };
 
-            // 3. Svarbu: Sukuriame 'multipart/mixed' konteinerį, kuris apjungs tekstą ir failą
             var multipart = new Multipart("mixed");
             multipart.Add(body);
             multipart.Add(attachment);
-
-            // 4. Priskiriame visą multipart turinį laiško Body
             email.Body = multipart;
 
-            using var smtp = new SmtpClient();
+            using var smtp = await PrisijungtiPrieSMTP();
             try
             {
-                // Mailtrap nustatymai dažniausiai naudoja StartTls arba paprastą jungtį
-                await smtp.ConnectAsync(_configuration["EmailSettings:Host"],
-                                        int.Parse(_configuration["EmailSettings:Port"]),
-                                        MailKit.Security.SecureSocketOptions.StartTls);
-
-                await smtp.AuthenticateAsync(_configuration["EmailSettings:User"],
-                                             _configuration["EmailSettings:Password"]);
-
                 await smtp.SendAsync(email);
             }
             finally

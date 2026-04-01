@@ -151,7 +151,6 @@ namespace OdontoKlinika.API.Controllers
 
         private string CreateToken(Vartotojas vartotojas)
         {
-            // Informacija, kurią „įsiuvame“ į žetoną (Claims)
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, vartotojas.Vardas + " " + vartotojas.Pavarde),
@@ -169,7 +168,7 @@ namespace OdontoKlinika.API.Controllers
                     issuer: _configuration.GetSection("Jwt:Issuer").Value,
                     audience: _configuration.GetSection("Jwt:Audience").Value,
                     claims: claims,
-                    expires: DateTime.Now.AddDays(1), // Žetonas galios 1 parą
+                    expires: DateTime.Now.AddDays(1),
                     signingCredentials: creds
                 );
 
@@ -279,25 +278,22 @@ namespace OdontoKlinika.API.Controllers
         {
             try
             {
-                // Validuokite Google ID tokeną
                 var payload = await ValidateGoogleToken(request.IdToken);
 
                 if (payload == null)
                     return BadRequest("Neteisingas Google token.");
 
-                // Patikrinkite ar vartotojas jau egzistuoja pagal el. paštą
                 var vartotojas = await _context.Vartotojai
                     .FirstOrDefaultAsync(u => u.ElPastas == payload.Email);
 
                 if (vartotojas == null)
                 {
-                    // Sukurkite naują vartotoją iš Google duomenų
                     vartotojas = new Pacientas
                     {
                         Vardas = payload.GivenName,
                         Pavarde = payload.FamilyName,
                         ElPastas = payload.Email,
-                        SlaptazodisHash = "", // Google vartotojams nereikia slaptažodžio
+                        SlaptazodisHash = "",
                         GoogleId = payload.Subject,
                         Telefonas = "",
                         AsmensKodas = "",
@@ -309,7 +305,6 @@ namespace OdontoKlinika.API.Controllers
                 }
                 else if (string.IsNullOrEmpty(vartotojas.GoogleId))
                 {
-                    // Prijunkite Google paskyrą prie esamo vartotojo
                     vartotojas.GoogleId = payload.Subject;
                     await _context.SaveChangesAsync();
                 }
@@ -319,11 +314,10 @@ namespace OdontoKlinika.API.Controllers
                     return Ok(new
                     {
                         requiresTwoFactor = true,
-                        userId = vartotojas.Id // Būtina 2-am žingsniui
+                        userId = vartotojas.Id
                     });
                 }
 
-                // 3. Įprastas prisijungimas (pacientas arba 2FA neaktyvus)
                 var token = CreateToken(vartotojas);
 
                 return Ok(new
