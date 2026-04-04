@@ -182,7 +182,6 @@ namespace OdontoKlinika.API.Controllers
             var user = _context.Vartotojai.Find(userId);
             if (user == null) return BadRequest("Vartotojas nerastas.");
 
-            // Jei dar neturi rakto – sugeneruojam
             if (string.IsNullOrEmpty(user.TwoFactorSecret))
             {
                 user.TwoFactorSecret = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 10);
@@ -191,13 +190,12 @@ namespace OdontoKlinika.API.Controllers
 
             var tfa = new TwoFactorAuthenticator();
 
-            // ČIA visa magija
             var setupInfo = tfa.GenerateSetupCode(
-                "Gelmidenta",          // Issuer (be tarpų, be LT raidžių)
-                user.ElPastas,        // Account
-                user.TwoFactorSecret, // Secret
-                false,                // QR kaip image URL
-                300                   // QR size
+                "Gelmidenta",          
+                user.ElPastas,        
+                user.TwoFactorSecret, 
+                false,                
+                300                   
             );
 
             return Ok(new

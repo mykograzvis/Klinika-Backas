@@ -15,7 +15,6 @@ namespace OdontoKlinika.API.Services
             _configuration = configuration;
         }
 
-        // Pagalbinis metodas – jungiamasi vieną kartą, naudojamas visuose 3 metoduose
         private async Task<SmtpClient> PrisijungtiPrieSMTP()
         {
             var smtp = new SmtpClient();
@@ -29,33 +28,6 @@ namespace OdontoKlinika.API.Services
                 _configuration["EmailSettings:Password"]
             );
             return smtp;
-        }
-
-        public async Task SiustiSaskaita(string klientoPastas, string klientoVardas, decimal suma, string procedurosHtml)
-        {
-            var email = new MimeMessage();
-            email.From.Add(new MailboxAddress("Gelmidenta", _configuration["EmailSettings:User"]));
-            email.To.Add(new MailboxAddress(klientoVardas, klientoPastas));
-            email.Subject = "Jūsų vizito sąskaita faktūra";
-
-            var bodyBuilder = new BodyBuilder
-            {
-                HtmlBody = $@"
-                <div style='font-family: Arial, sans-serif; padding: 20px;'>
-                    <h1 style='color: #007bff;'>Sveiki, {klientoVardas}</h1>
-                    <p>Dėkojame, kad lankėtės mūsų klinikoje. Štai jūsų vizito išrašas:</p>
-                    <div style='background: #f8f9fa; padding: 15px; border-radius: 5px;'>
-                        {procedurosHtml}
-                    </div>
-                    <h2 style='text-align: right;'>Iš viso sumokėta: {suma} €</h2>
-                    <p style='font-size: 12px; color: #666;'>Šis laiškas sugeneruotas automatiškai.</p>
-                </div>"
-            };
-            email.Body = bodyBuilder.ToMessageBody();
-
-            using var smtp = await PrisijungtiPrieSMTP();
-            await smtp.SendAsync(email);
-            await smtp.DisconnectAsync(true);
         }
 
         public async Task SiustiPranesima(string pirkejoEmail, string tema, string htmlTurinys)

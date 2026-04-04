@@ -111,7 +111,6 @@ public class GrafikasController : ControllerBase
             vizitas.Busena = "Atšauktas";
             atsauktuKiekis++;
 
-            // Siunčiame laišką (naudojame tavo turimą logiką)
             if (vizitas.Pacientas != null && !string.IsNullOrEmpty(vizitas.Pacientas.ElPastas))
             {
                 try

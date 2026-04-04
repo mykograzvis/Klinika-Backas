@@ -390,7 +390,7 @@ namespace OdontoKlinika.API.Controllers
                     // Sukuriame paprastą pranešimo tekstą (arba galite pridėti naują metodą į EmailService)
                     await _emailService.SiustiPranesima(
                         vizitas.Pacientas.ElPastas,
-                        "Atšauktas vizitas - OdontoKlinika",
+                        "Atšauktas vizitas - Gelmidenta",
                         $@"<h3>Gerb. {vizitas.Pacientas.Vardas} {vizitas.Pacientas.Pavarde},</h3>
                    <p>Informuojame, kad jūsų vizitas, suplanuotas <strong>{laikas}</strong> pas gydytoją <strong>{gydytojas}</strong>, buvo atšauktas.</p>
                    <p>Jei turite klausimų, susisiekite su klinikos administracija.</p>"
@@ -512,24 +512,21 @@ namespace OdontoKlinika.API.Controllers
             // DarboGrafikas ir DarboIsimtis naudoja string GydytojoId
             var gydytojoVartotojoId = gydytojas.Id.ToString();
 
-            // 3. IŠIMTYS (atostogos, visą dieną nedirba ir pan.)
             var isimtis = await _context.DarboIsimtys
                 .FirstOrDefaultAsync(i =>
                     i.GydytojoId == gydytojoVartotojoId &&
                     i.Data.Date == dienosPradzia);
 
-            // Jei nustatyta išimtis ir ArDirba == false – visa diena uždaryta
             if (isimtis != null && !isimtis.ArDirba)
             {
                 return Ok(new
                 {
                     uzimta = true,
-                    zinute = "Gydytojas šią dieną nedirba (išimtis).",
+                    zinute = "Gydytojas šią dieną atostogauja.",
                     laikai = new List<string>()
                 });
             }
 
-            // 4. BAZINIS GRAFIKAS (savaitės dienos)
             var savaitesDiena = dienosPradzia.DayOfWeek;
 
             var grafikas = await _context.DarboGrafikai
@@ -547,8 +544,6 @@ namespace OdontoKlinika.API.Controllers
                 });
             }
 
-            // 5. Nustatome realias darbo valandas šiai dienai
-            // Bazinės valandos
             TimeSpan darboPradzia = !string.IsNullOrEmpty(grafikas.Pradzia)
                 ? TimeSpan.Parse(grafikas.Pradzia)
                 : TimeSpan.FromHours(0);
@@ -557,7 +552,6 @@ namespace OdontoKlinika.API.Controllers
                 ? TimeSpan.Parse(grafikas.Pabaiga)
                 : TimeSpan.FromHours(24);
 
-            // Jei yra išimtis su ArDirba == true ir nurodytomis valandomis – perrašom
             if (isimtis != null &&
                 isimtis.ArDirba &&
                 !string.IsNullOrEmpty(isimtis.Pradzia) &&
@@ -567,10 +561,8 @@ namespace OdontoKlinika.API.Controllers
                 darboPabaiga = TimeSpan.Parse(isimtis.Pabaiga);
             }
 
-            // 6. UŽIMTI SEGMENTAI (30 min žingsniu)
             var uzimtiSegmentai = new HashSet<string>();
 
-            // 6.1. Visi laikai UŽ darbo valandų ribų laikomi užimti
             for (var t = TimeSpan.FromHours(0);
                  t < TimeSpan.FromHours(24);
                  t = t.Add(TimeSpan.FromMinutes(30)))
@@ -578,17 +570,16 @@ namespace OdontoKlinika.API.Controllers
                 if (t < darboPradzia || t >= darboPabaiga)
                 {
                     var dt = dienosPradzia.Add(t);
-                    uzimtiSegmentai.Add(dt.ToString("HH:mm")); // formatas kaip fronte
+                    uzimtiSegmentai.Add(dt.ToString("HH:mm"));
                 }
             }
 
-            // 6.2. Esami vizitai tą dieną
             var vizitai = await _context.Vizitai
                 .Where(v =>
                     v.GydytojasId == gydytojasId &&
                     v.PradziosLaikas >= dienosPradzia &&
                     v.PradziosLaikas < dienosPabaiga &&
-                    v.Busena != "Atšauktas")   // naudok tą patį tekstą kaip kituose metoduose
+                    v.Busena != "Atšauktas")
                 .ToListAsync();
 
             foreach (var v in vizitai)

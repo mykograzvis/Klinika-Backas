@@ -20,19 +20,18 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-// 3. Swagger konfigūracija (Ištaisyta)
+//Swagger
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "OdontoKlinika API", Version = "v1" });
 
-    // 1. Apibrėžiame schemą
     var securityScheme = new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         Name = "JWT Authentication",
         Description = "Įveskite savo JWT žetoną šiuo formatu: Bearer {tokenas}",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
         Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
-        Scheme = "bearer", // Svarbu: mažosiomis raidėmis
+        Scheme = "bearer",
         BearerFormat = "JWT",
         Reference = new Microsoft.OpenApi.Models.OpenApiReference
         {
@@ -43,7 +42,6 @@ builder.Services.AddSwaggerGen(c =>
 
     c.AddSecurityDefinition("Bearer", securityScheme);
 
-    // 2. Nurodome, kad visiems metodams reikia šios schemos
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         { securityScheme, new string[] { } }
