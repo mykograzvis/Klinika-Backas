@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj": {}
+    "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj": {}
   },
   "projects": {
-    "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj": {
+    "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
+        "projectUniqueName": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
         "projectName": "OdontoKlinika",
-        "projectPath": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
+        "projectPath": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
         "packagesPath": "C:\\Users\\myka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\obj\\",
+        "outputPath": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,6 +93,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "QuestPDF": {
               "target": "Package",

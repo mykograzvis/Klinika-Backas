@@ -1,145 +1,142 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\",
+  "WorkspaceRootPath": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\statistikacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\statistikacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\vizitaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\vizitaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\vizitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\vizitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\vartotojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\vartotojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\dtos\\vizitaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\vizitaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\procedura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\procedura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\dtos\\vartotojaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\vartotojaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\vartotojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\vartotojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\grafikascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\grafikascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\gydytojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\gydytojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\darbografikas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\darbografikas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\darboisimtis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\darboisimtis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\gydytojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\gydytojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\data\\odontodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\data\\odontodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\proceduroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\proceduroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\controllers\\pacientaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\pacientaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\pacientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\pacientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OdontoKlinika\\Migrations\\20260204151127_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\dtos\\procedurosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\procedurosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\dtos\\gydytojasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\gydytojasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\statistikacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\statistikacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\vizitaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\vizitaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\odontoklinika.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\vizitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\vizitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\vartotojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\vartotojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\dtos\\vizitaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\vizitaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\procedura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\procedura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\dtos\\vartotojaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\vartotojaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\vartotojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\vartotojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\grafikascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\grafikascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\gydytojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\gydytojaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\darbografikas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\darbografikas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\darboisimtis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\darboisimtis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\gydytojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\gydytojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\data\\odontodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\data\\odontodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\proceduroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\proceduroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\controllers\\pacientaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\controllers\\pacientaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\pacientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\pacientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\dtos\\procedurosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\procedurosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\dtos\\gydytojasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\dtos\\gydytojasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\odontoklinika.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\odontoklinika.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\migrations\\20260209115857_google.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\migrations\\20260209115857_google.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\migrations\\20260209115857_google.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\migrations\\20260204154427_isimtys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\migrations\\20260204154427_isimtys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\migrations\\20260204154427_isimtys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\migrations\\20260204153629_pertrauka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\migrations\\20260204153629_pertrauka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\migrations\\20260204153629_pertrauka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\odontoklinika\\odontoklinika\\odontoklinika\\migrations\\20260204151820_contextuo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|c:\\users\\myka\\documents\\github\\klinika-backas\\odontoklinika\\odontoklinika\\migrations\\20260204151820_contextuo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8519DB70-55B3-4983-9170-3640DD5F0A89}|OdontoKlinika\\OdontoKlinika.csproj|solutionrelative:odontoklinika\\migrations\\20260204151820_contextuo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -150,7 +147,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -163,396 +160,425 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "VartotojaiDto.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\VartotojaiDto.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\VartotojaiDto.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\VartotojaiDto.cs",
-              "RelativeToolTip": "OdontoKlinika\\DTOs\\VartotojaiDto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwAYAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T12:26:43.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Procedura.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Procedura.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Procedura.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Procedura.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Procedura.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Procedura.cs",
               "RelativeToolTip": "OdontoKlinika\\Models\\Procedura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:09:51.013Z"
+              "WhenOpened": "2026-01-04T12:09:51.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\AuthController.cs",
               "RelativeToolTip": "OdontoKlinika\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABoBAAAAAAAAAAAAADcBAABFAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAIBJwDcBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:37:30.748Z"
+              "WhenOpened": "2026-01-04T18:37:30.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Gydytojas.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Gydytojas.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Gydytojas.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Gydytojas.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Gydytojas.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Gydytojas.cs",
               "RelativeToolTip": "OdontoKlinika\\Models\\Gydytojas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:26:41.626Z"
+              "WhenOpened": "2026-01-04T18:26:41.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\appsettings.json",
               "RelativeDocumentMoniker": "OdontoKlinika\\appsettings.json",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\appsettings.json",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\appsettings.json",
               "RelativeToolTip": "OdontoKlinika\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-04T12:11:04.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Program.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Program.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Program.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Program.cs",
               "RelativeToolTip": "OdontoKlinika\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:05:33.161Z"
+              "WhenOpened": "2026-01-04T12:05:33.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AuthDto.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\AuthDto.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\AuthDto.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\AuthDto.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\AuthDto.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\AuthDto.cs",
               "RelativeToolTip": "OdontoKlinika\\DTOs\\AuthDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T21:50:44.141Z"
+              "WhenOpened": "2026-01-07T21:50:44.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Vartotojas.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Vartotojas.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Vartotojas.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Vartotojas.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Vartotojas.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Vartotojas.cs",
               "RelativeToolTip": "OdontoKlinika\\Models\\Vartotojas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:25:19.517Z"
+              "WhenOpened": "2026-01-04T18:25:19.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VizitaiController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\VizitaiController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\VizitaiController.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\VizitaiController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\VizitaiController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\VizitaiController.cs",
               "RelativeToolTip": "OdontoKlinika\\Controllers\\VizitaiController.cs",
-              "ViewState": "AgIAAFACAAAAAAAAAAAQwFUCAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAFACAAAAAAAAAAAQwFUCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:09:28.421Z"
+              "WhenOpened": "2026-01-04T18:09:28.421Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "20260209115857_google.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260209115857_google.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260209115857_google.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260209115857_google.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260209115857_google.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260209115857_google.cs",
               "RelativeToolTip": "OdontoKlinika\\Migrations\\20260209115857_google.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:58:58.14Z"
+              "WhenOpened": "2026-02-09T11:58:58.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StatistikaController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\StatistikaController.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\StatistikaController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\StatistikaController.cs",
-              "RelativeToolTip": "OdontoKlinika\\Controllers\\StatistikaController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwD0AAAA3AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "OdontoKlinika\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T14:39:18.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Vizitas.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Vizitas.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Vizitas.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Vizitas.cs",
-              "RelativeToolTip": "OdontoKlinika\\Models\\Vizitas.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:09:26.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VizitaiDto.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\VizitaiDto.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\VizitaiDto.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\VizitaiDto.cs",
-              "RelativeToolTip": "OdontoKlinika\\DTOs\\VizitaiDto.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBUAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T21:53:53.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GydytojaiController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\GydytojaiController.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\GydytojaiController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\GydytojaiController.cs",
-              "RelativeToolTip": "OdontoKlinika\\Controllers\\GydytojaiController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAwD4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T22:21:05.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DarboGrafikas.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\DarboGrafikas.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\DarboGrafikas.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\DarboGrafikas.cs",
-              "RelativeToolTip": "OdontoKlinika\\Models\\DarboGrafikas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:03:51.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DarboIsimtis.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\DarboIsimtis.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\DarboIsimtis.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\DarboIsimtis.cs",
-              "RelativeToolTip": "OdontoKlinika\\Models\\DarboIsimtis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:40:57.318Z"
+              "WhenOpened": "2026-01-06T23:07:08.602Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "VartotojaiController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\VartotojaiController.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\VartotojaiController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\VartotojaiController.cs",
-              "RelativeToolTip": "OdontoKlinika\\Controllers\\VartotojaiController.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAuwN8AAAAFAAAAAAAAAA==",
+              "Title": "VartotojaiDto.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\VartotojaiDto.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\VartotojaiDto.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\VartotojaiDto.cs",
+              "RelativeToolTip": "OdontoKlinika\\DTOs\\VartotojaiDto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwAYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T22:47:48.797Z"
+              "WhenOpened": "2026-01-07T12:26:43.875Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Services\\EmailService.cs",
-              "RelativeToolTip": "OdontoKlinika\\Services\\EmailService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAIwGUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "StatistikaController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\StatistikaController.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\StatistikaController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\StatistikaController.cs",
+              "RelativeToolTip": "OdontoKlinika\\Controllers\\StatistikaController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAuwD0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T21:05:09.921Z"
+              "WhenOpened": "2026-01-25T14:39:18.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Vizitas.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Vizitas.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Vizitas.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Vizitas.cs",
+              "RelativeToolTip": "OdontoKlinika\\Models\\Vizitas.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:09:26.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VizitaiDto.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\VizitaiDto.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\VizitaiDto.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\VizitaiDto.cs",
+              "RelativeToolTip": "OdontoKlinika\\DTOs\\VizitaiDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T21:53:53.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GydytojaiController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\GydytojaiController.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\GydytojaiController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\GydytojaiController.cs",
+              "RelativeToolTip": "OdontoKlinika\\Controllers\\GydytojaiController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T22:21:05.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DarboGrafikas.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\DarboGrafikas.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\DarboGrafikas.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\DarboGrafikas.cs",
+              "RelativeToolTip": "OdontoKlinika\\Models\\DarboGrafikas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T15:03:51.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DarboIsimtis.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\DarboIsimtis.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\DarboIsimtis.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\DarboIsimtis.cs",
+              "RelativeToolTip": "OdontoKlinika\\Models\\DarboIsimtis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T15:40:57.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "GrafikasController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\GrafikasController.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\GrafikasController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\GrafikasController.cs",
-              "RelativeToolTip": "OdontoKlinika\\Controllers\\GrafikasController.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIQAAABRAAAAAAAAAA==",
+              "Title": "VartotojaiController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\VartotojaiController.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\VartotojaiController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\VartotojaiController.cs",
+              "RelativeToolTip": "OdontoKlinika\\Controllers\\VartotojaiController.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAuwN8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:06:12.918Z"
+              "WhenOpened": "2026-01-06T22:47:48.797Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProcedurosController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\ProcedurosController.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\ProcedurosController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\ProcedurosController.cs",
-              "RelativeToolTip": "OdontoKlinika\\Controllers\\ProcedurosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Services\\EmailService.cs",
+              "RelativeToolTip": "OdontoKlinika\\Services\\EmailService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T11:18:52.391Z"
+              "WhenOpened": "2026-01-24T21:05:09.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GrafikasController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\GrafikasController.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\GrafikasController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\GrafikasController.cs",
+              "RelativeToolTip": "OdontoKlinika\\Controllers\\GrafikasController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAIBJwIQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T15:06:12.918Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "ProcedurosController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\ProcedurosController.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\ProcedurosController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\ProcedurosController.cs",
+              "RelativeToolTip": "OdontoKlinika\\Controllers\\ProcedurosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T11:18:52.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "PacientaiController.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\PacientaiController.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\PacientaiController.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Controllers\\PacientaiController.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Controllers\\PacientaiController.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Controllers\\PacientaiController.cs",
               "RelativeToolTip": "OdontoKlinika\\Controllers\\PacientaiController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:07:01.508Z"
+              "WhenOpened": "2026-01-04T18:07:01.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "20260204154427_isimtys.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
               "RelativeToolTip": "OdontoKlinika\\Migrations\\20260204154427_isimtys.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:44:28.087Z"
+              "WhenOpened": "2026-02-04T15:44:28.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "OdontoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Data\\OdontoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Data\\OdontoDbContext.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Data\\OdontoDbContext.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Data\\OdontoDbContext.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Data\\OdontoDbContext.cs",
               "RelativeToolTip": "OdontoKlinika\\Data\\OdontoDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:10:42.462Z"
+              "WhenOpened": "2026-01-04T12:10:42.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "20260204153629_pertrauka.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
               "RelativeToolTip": "OdontoKlinika\\Migrations\\20260204153629_pertrauka.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:36:29.655Z"
+              "WhenOpened": "2026-02-04T15:36:29.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "20260204151820_contextuo.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
               "RelativeToolTip": "OdontoKlinika\\Migrations\\20260204151820_contextuo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:18:20.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Pacientas.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Pacientas.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Pacientas.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Pacientas.cs",
-              "RelativeToolTip": "OdontoKlinika\\Models\\Pacientas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:09:01.639Z"
+              "WhenOpened": "2026-02-04T15:18:20.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Models\\Admin.cs",
-              "RelativeToolTip": "OdontoKlinika\\Models\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Title": "Pacientas.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Pacientas.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Pacientas.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Pacientas.cs",
+              "RelativeToolTip": "OdontoKlinika\\Models\\Pacientas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:27:00.414Z"
+              "WhenOpened": "2026-01-04T12:09:01.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Models\\Admin.cs",
+              "RelativeToolTip": "OdontoKlinika\\Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T18:27:00.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "20260204151127_init.cs",
               "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260204151127_init.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs",
               "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs",
-              "RelativeToolTip": "OdontoKlinika\\Migrations\\20260204151127_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260204151127_init.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:11:27.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "PdfService.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Services\\PdfService.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Services\\PdfService.cs",
               "RelativeDocumentMoniker": "OdontoKlinika\\Services\\PdfService.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Services\\PdfService.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\Services\\PdfService.cs",
               "RelativeToolTip": "OdontoKlinika\\Services\\PdfService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwCYAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:28:14.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProcedurosDto.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\ProcedurosDto.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\ProcedurosDto.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\ProcedurosDto.cs",
-              "RelativeToolTip": "OdontoKlinika\\DTOs\\ProcedurosDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T11:19:31.44Z"
+              "WhenOpened": "2026-02-02T11:28:14.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "GydytojasDto.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\GydytojasDto.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\GydytojasDto.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\DTOs\\GydytojasDto.cs",
-              "RelativeToolTip": "OdontoKlinika\\DTOs\\GydytojasDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "ProcedurosDto.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\ProcedurosDto.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\ProcedurosDto.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\ProcedurosDto.cs",
+              "RelativeToolTip": "OdontoKlinika\\DTOs\\ProcedurosDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T22:26:20.183Z"
+              "WhenOpened": "2026-01-18T11:19:31.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Data\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "OdontoKlinika\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAAAyAAAAAAAAAA==",
+              "Title": "GydytojasDto.cs",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\GydytojasDto.cs",
+              "RelativeDocumentMoniker": "OdontoKlinika\\DTOs\\GydytojasDto.cs",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\DTOs\\GydytojasDto.cs",
+              "RelativeToolTip": "OdontoKlinika\\DTOs\\GydytojasDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T23:07:08.602Z"
+              "WhenOpened": "2026-01-06T22:26:20.183Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "20260104184313_PapildytaStruktura2.cs",
               "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
               "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
-              "RelativeToolTip": "OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184313_PapildytaStruktura2.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T18:43:13.727Z"
             },
@@ -561,9 +587,9 @@
               "DocumentIndex": 28,
               "Title": "20260104184717_PapildytaStruktura3.cs",
               "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
-              "RelativeDocumentMoniker": "OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
               "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
-              "RelativeToolTip": "OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\Migrations\\20260104184717_PapildytaStruktura3.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T18:47:17.473Z"
             },
@@ -571,13 +597,14 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "OdontoKlinika.csproj",
-              "DocumentMoniker": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
+              "DocumentMoniker": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
               "RelativeDocumentMoniker": "OdontoKlinika\\OdontoKlinika.csproj",
-              "ToolTip": "C:\\Users\\myka\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
+              "ToolTip": "C:\\Users\\myka\\Documents\\GitHub\\Klinika-Backas\\OdontoKlinika\\OdontoKlinika\\OdontoKlinika.csproj",
               "RelativeToolTip": "OdontoKlinika\\OdontoKlinika.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-04T12:08:09.357Z"
+              "WhenOpened": "2026-01-04T12:08:09.357Z",
+              "EditorCaption": ""
             }
           ]
         }

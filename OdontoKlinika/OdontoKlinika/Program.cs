@@ -70,6 +70,7 @@ builder.Services.AddCors(options => {
 
 builder.Services.AddScoped<EmailService>();
 builder.Services.AddScoped<PdfService>();
+builder.Services.AddScoped<LlmService>();
 
 var app = builder.Build();
 
